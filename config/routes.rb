@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/query_params_path" => "params_examples#query_params_method"
     get "/name_path" => "params_examples#name_method"
+    get "/guess_query_path" => "params_examples#guess_query_method"
   end
 end

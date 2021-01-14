@@ -31,4 +31,9 @@ class Api::ParamsExamplesController < ApplicationController
     @output_message = "The title is #{params["blog_post_title"]}"
     render "segment_params.json.jb"
   end
+
+  def body_params_method
+    @output_message = "Your secret password is #{params["secret_sauce"]}"
+    render "body_params.json.jb"
+  end
 end
